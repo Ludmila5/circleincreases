@@ -1,0 +1,33 @@
+html, body {
+   height: 100%;
+}
+body {
+   text-align: center;
+   letter-spacing: 5px;
+}
+.box {
+   display: flex;
+   flex-direction: column;
+   align-item: center;
+   justify-content: center;
+   height: 100%;
+}
+.circle {
+   position: relative;
+   width: 100px;
+   height: 100px;
+   background: green;
+   margin: 0 auto;
+   border-radius: 100%;
+   animation: action 1.5s infinite alternate;
+}
+@keyframes action {
+   0% {
+      opacity: 0.1;
+      transform: scale(0.2);
+   }
+   100% {
+      opacity: 1;
+      transform: scale(1);
+   }
+}
